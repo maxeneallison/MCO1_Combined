@@ -1,127 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="homepage-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Outfit" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="homepage-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Outfit"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <script src="hp-script.js"></script>
     <header>
-    
-        <div class="logo-container">
-            <img src="LOGO-YL.png" alt="None">
-        </div>
-        <div class="right-container">
-            <button onclick="showSignup()" id="signup" class="marginleft-20 bold">Sign up</button>
-            <button onclick="showLogIn()" id="log-in" class="bold">Log in</button>
-            <img id="avatar-logo" src="https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2247726673.jpg" alt="None">
-        </div>
+      <div class="logo-container">
+        <img src="LOGO-YL.png" alt="None" />
+      </div>
+      <div class="right-container">
+        <button onclick="showSignup()" id="signup" class="marginleft-20 bold">
+          Sign up
+        </button>
+        <button onclick="showLogIn()" id="log-in" class="bold">Log in</button>
+        <img
+          id="avatar-logo"
+          src="https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2247726673.jpg"
+          alt="None"
+        />
+      </div>
     </header>
     <div class="parent-div">
-        <div class="left-section">
-            <div class="imgdiv">
-                <img id="display-img-resto" src="Chimmy_5.webp" alt="None">
-            </div>
-            <div class="buttondiv">
-                <button onclick="prev()" id="previous-button" class=" bold">Previous</button>
-                    <span id="firstdot" class="dot active" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                <button onclick="next()" id="next-button" class=" bold">Next</button>  
-                <a href="/view_establishment/view_establishments.html"> 
-                    <button class="establishments-button bold">View Establishments</button>
-                </a> 
-            </div>
+      <div class="left-section">
+        <div class="imgdiv">
+          <img id="display-img-resto" src="Chimmy_5.webp" alt="None" />
         </div>
-        <div class="right-section">
-            <div class="restotitle-parent">
-                <div id="resto-title-container" class="restotitle-container">
-                    <h1 id="resto-title" class="bold">24 Chicken</h1>
-                </div>
-            </div>
-            <div class="review-title-container">
-                <h2 class="bold">Reviews</h2>
-            </div>
-            <div class="reviews-cotainer">
-                <div id="first-review" class="review-popup">
-                    <div class="left-review-popup-odd">
-                        <img src="https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2247726673.jpg" alt="">
-                    </div>
-                    <div class="right-review-popup-odd">
-                        <h3 class="italic bold"></h3>
-                        <p></p>
-                        <span id="first-star-1" class="fa fa-star"></span>
-                        <span id="second-star-1" class="fa fa-star"></span>
-                        <span id="third-star-1" class="fa fa-star"></span>
-                        <span id="fourth-star-1" class="fa fa-star"></span>
-                        <span id="fifth-star-1" class="fa fa-star"></span>
-                    </div>
-                </div>
-                <div id="second-review" class="review-popup">
-                    <div class="left-review-popup-even">
-                        <h3 class="italic bold"></h3>
-                        <p></p>
-                        <span id="first-star-2" class="fa fa-star"></span>
-                        <span id="second-star-2" class="fa fa-star"></span>
-                        <span id="third-star-2" class="fa fa-star"></span>
-                        <span id="fourth-star-2" class="fa fa-star"></span>
-                        <span id="fifth-star-2" class="fa fa-star"></span>
-                    </div>
-                    <div class="right-review-popup-even">
-                        <img src="https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2247726673.jpg" alt="">
-                    </div>
-                </div>
-                <div id="third-review" class="review-popup">
-                    <div class="left-review-popup-odd">
-                        <img src="https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2247726673.jpg" alt="">
-                    </div>
-                    <div class="right-review-popup-odd">
-                        <h3 class="italic bold"></h3>
-                        <p></p>
-                        <span id="first-star-3" class="fa fa-star"></span>
-                        <span id="second-star-3" class="fa fa-star"></span>
-                        <span id="third-star-3" class="fa fa-star"></span>
-                        <span id="fourth-star-3" class="fa fa-star"></span>
-                        <span id="fifth-star-3" class="fa fa-star"></span>
-                    </div>
-                </div>                
-            </div>
+        <div class="buttondiv">
+          <button onclick="prev()" id="previous-button" class="bold">
+            Previous
+          </button>
+          <span
+            id="firstdot"
+            class="dot active"
+            onclick="currentSlide(1)"
+          ></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <button onclick="next()" id="next-button" class="bold">Next</button>
+          <a href="/view_establishment/view_establishments.html">
+            <button class="establishments-button bold">
+              View Establishments
+            </button>
+          </a>
         </div>
+      </div>
+      <div class="right-section">
+        <div class="restotitle-parent">
+          <div id="resto-title-container" class="restotitle-container">
+            <h1 id="resto-title" class="bold">24 Chicken</h1>
+          </div>
+        </div>
+        <div class="review-title-container">
+          <h2 class="bold">Reviews</h2>
+        </div>
+        <div class="reviews-cotainer">
+          <div id="first-review" class="review-popup">
+            <div class="left-review-popup-odd">
+              <img
+                src="https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2247726673.jpg"
+                alt=""
+              />
+            </div>
+            <div class="right-review-popup-odd">
+              <h3 class="italic bold"></h3>
+              <p></p>
+              <span id="first-star-1" class="fa fa-star"></span>
+              <span id="second-star-1" class="fa fa-star"></span>
+              <span id="third-star-1" class="fa fa-star"></span>
+              <span id="fourth-star-1" class="fa fa-star"></span>
+              <span id="fifth-star-1" class="fa fa-star"></span>
+            </div>
+          </div>
+          <div id="second-review" class="review-popup">
+            <div class="left-review-popup-even">
+              <h3 class="italic bold"></h3>
+              <p></p>
+              <span id="first-star-2" class="fa fa-star"></span>
+              <span id="second-star-2" class="fa fa-star"></span>
+              <span id="third-star-2" class="fa fa-star"></span>
+              <span id="fourth-star-2" class="fa fa-star"></span>
+              <span id="fifth-star-2" class="fa fa-star"></span>
+            </div>
+            <div class="right-review-popup-even">
+              <img
+                src="https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2247726673.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div id="third-review" class="review-popup">
+            <div class="left-review-popup-odd">
+              <img
+                src="https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2247726673.jpg"
+                alt=""
+              />
+            </div>
+            <div class="right-review-popup-odd">
+              <h3 class="italic bold"></h3>
+              <p></p>
+              <span id="first-star-3" class="fa fa-star"></span>
+              <span id="second-star-3" class="fa fa-star"></span>
+              <span id="third-star-3" class="fa fa-star"></span>
+              <span id="fourth-star-3" class="fa fa-star"></span>
+              <span id="fifth-star-3" class="fa fa-star"></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="popup-login">
-        <form name="login" action="homepage.html" class="popup-login-content" onsubmit="return successfulLogin()">
-            <h1 onclick="closeLogIn()" id="close-login" type="submit">x</h1>
-            <img src="LOGO-YL.png" alt="None">
-            <input id="username" type="text" placeholder="Username" required>
-            <input id="password" type="password" placeholder="Password" required>
-            <button class="login-button bold" type="submit">Log in</button>
-        </form>
+      <form
+        name="login"
+        action="homepage.html"
+        class="popup-login-content"
+        onsubmit="return successfulLogin()"
+      >
+        <h1 onclick="closeLogIn()" id="close-login" type="submit">x</h1>
+        <img src="LOGO-YL.png" alt="None" />
+        <input id="username" type="text" placeholder="Username" required />
+        <input id="password" type="password" placeholder="Password" required />
+        <button class="login-button bold" type="submit">Log in</button>
+      </form>
     </div>
 
     <div class="popup-signup">
-        <form name="signup" action="homepage.html" class="popup-signup-content" onsubmit="return verifyPassword()"> 
-            <h1 onclick="closeSignup()" id="close-login" type="submit">x</h1>
-            <img src="LOGO-YL.png" alt="None">
-            <input id="username-signup" type="text" placeholder="Enter Username" required>
-            <input id="password-signup" type="password" placeholder="Enter Password" required>
-            <input id="verify-password-signup" type="password" placeholder="Re-Enter Password" required>
-            <button class="login-button bold" type="submit">Register</button>
-        </form>
+      <form
+        name="signup"
+        action="homepage.html"
+        class="popup-signup-content"
+        onsubmit="return verifyPassword()"
+      >
+        <h1 onclick="closeSignup()" id="close-login" type="submit">x</h1>
+        <img src="LOGO-YL.png" alt="None" />
+        <input
+          id="username-signup"
+          type="text"
+          placeholder="Enter Username"
+          required
+        />
+        <input
+          id="password-signup"
+          type="password"
+          placeholder="Enter Password"
+          required
+        />
+        <input
+          id="verify-password-signup"
+          type="password"
+          placeholder="Re-Enter Password"
+          required
+        />
+        <button class="login-button bold" type="submit">Register</button>
+      </form>
     </div>
     <footer>
-        <p id="footer-text">&copy; Amores, De Guzman, Tolentino and Villagarcia</p>
+      <p id="footer-text">
+        &copy; Amores, De Guzman, Tolentino and Villagarcia
+      </p>
     </footer>
     <script>
-        window.onload = function() {
-            setDefault(0); // Pass the index of the set you want to use as default
-        };
+      window.onload = function () {
+        setDefault(0); // Pass the index of the set you want to use as default
+      };
     </script>
-</body>
+  </body>
 </html>

@@ -20,19 +20,23 @@ body {
   padding: 10px; /* Adjust padding */
   z-index: 1000; /* Ensure it's above other content */
 }
-#home {
+.header-options {
+  display: flex;
   color: black;
   font-family: "Outfit";
-  font-size: 22px;
-  margin-left: 60%;
+  font-size: 20px;
+  margin-left: 50%;
   cursor: pointer;
 }
-#home a {
+.opt-titles {
+  margin-right: 20px;
+}
+.header-options a {
   z-index: 2;
   color: #fff;
   text-decoration: none;
 }
-#home:hover {
+.header-options :hover {
   text-decoration: underline; /* Add underline when hovered */
   text-decoration-color: #ffa800;
   text-decoration-thickness: 5px;
@@ -55,8 +59,9 @@ body {
   color: #fff;
   align-items: center;
   align-content: center;
-  border-radius: 50px;
-  width: 14%;
+  border-radius: 50%;
+  width: 70px; /* Adjust width to whatever you need */
+  height: 70px; /* Adjust height to match width for a perfect circle */
   margin-right: 5%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -65,11 +70,11 @@ body {
   visibility: hidden;
   position: absolute;
   top: calc(100%);
-  left: 5%; /* Position options on the left side */
+  left: -50%; /* Position options on the left side */
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;
-  width: 85%;
+  width: 200%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -80,7 +85,7 @@ body {
 #go-profile {
   display: block;
   width: 100%;
-  background-color: #eab343;
+  background-color: #ffa800;
   color: #fff;
   border: none;
   border-radius: 50px;
@@ -104,14 +109,9 @@ body {
   cursor: pointer;
 }
 #profile-pic {
-  width: 19%;
-  margin-left: 10px;
+  width: 80%;
+  margin-left: 7px;
   border-radius: 50%;
-}
-#profile-name {
-  margin-left: 11px;
-  font-family: "Outfit";
-  font-size: 19px;
 }
 #establishment-title {
   align-items: center;
