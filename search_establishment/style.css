@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll; /* Allow vertical scrolling */
+}
+#eggy-logo {
+  width: 12%;
+  padding-left: 40px;
+}
+.top-header {
+  display: flex;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0; /* Ensure it's pinned to the left */
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Example background color */
+  color: #fff; /* Example text color */
+  padding: 10px; /* Adjust padding */
+  z-index: 1000; /* Ensure it's above other content */
+}
+.header-options {
+  display: flex;
+  color: black;
+  font-family: "Outfit";
+  font-size: 20px;
+  margin-left: 50%;
+  cursor: pointer;
+}
+.opt-titles {
+  margin-right: 20px;
+}
+.header-options a {
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+.header-options :hover {
+  text-decoration: underline; /* Add underline when hovered */
+  text-decoration-color: #ffa800;
+  text-decoration-thickness: 5px;
+  transition: all 0.3s ease;
+}
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.top-profile {
+  order: 1; /* Move "Home" to the left */
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  background-color: #ffa800;
+  border: none; /* Remove border */
+  color: #fff;
+  align-items: center;
+  align-content: center;
+  border-radius: 50%;
+  width: 70px; /* Adjust width to whatever you need */
+  height: 70px; /* Adjust height to match width for a perfect circle */
+  margin-right: 5%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.options {
+  visibility: hidden;
+  position: absolute;
+  top: calc(100%);
+  left: -50%; /* Position options on the left side */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-profile:hover .options {
+  visibility: visible;
+}
+
+#go-profile {
+  display: block;
+  width: 100%;
+  background-color: #ffa800;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+#go-profile:hover,
+#logout:hover {
+  background-color: #ff5300;
+}
+#logout {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  color: black;
+  border: 2px solid #ffa800; /* Added solid border */
+  border-radius: 50px;
+  padding: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+#profile-pic {
+  width: 80%;
+  margin-left: 7px;
+  border-radius: 50%;
+}
+#establishment-title {
+  align-items: center;
+  align-content: center;
+  margin-left: 6%;
+  margin-top: 9%;
+  font-size: 30px;
+  margin-bottom: 0;
+  font-family: "Outfit";
+}
+hr {
+  height: 2px; /* Adjust the height as needed */
+  background-color: #e6e6e6; /* Change the color if desired */
+  border: none; /* Remove default border */
+  margin: 20px 0; /* Adjust margin top and bottom */
+  margin-left: 90px;
+  width: 88%;
+}
+.first-line {
+  display: flex;
+  height: 50vh;
+  margin-left: 110px;
+  width: 85%;
+  margin-bottom: 5%;
+}
+.restos {
+  border: 2px solid #ffa800; /* Added solid border */
+  margin: 0;
+  border-radius: 8%;
+  width: 30%;
+  margin-right: 25px;
+  margin-left: 25px;
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s; /* Add transition for smooth effect */
+}
+.restos:hover {
+  transform: translateY(-5px); /* Move button up slightly */
+  color: #ff5300;
+}
+
+#resto-pic {
+  width: 100%;
+  border-radius: 25px;
+  margin: 0;
+  bottom: 0;
+}
+#resto-name {
+  margin: 0;
+  padding: 0;
+  font-size: 23px;
+  margin-left: 10px;
+  width: 200%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  align-items: center;
+  align-content: center;
+}
+.ratings {
+  align-items: center;
+  align-content: center;
+  display: flex;
+  color: #ffa800;
+  font-family: "Outfit";
+  font-weight: 300;
+}
+#main-rating {
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 5px; /* Adjust the value as needed */
+  color: #ffa800;
+  font-family: "Outfit";
+  font-weight: 300;
+}
+.title-bar-box {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  align-content: center;
+  margin-top: -3%;
+}
+#rate {
+  margin: 0;
+  width: 15%;
+  padding-left: 9px;
+}
+#out-of {
+  color: #ffa800;
+  font-family: "Outfit";
+  font-weight: 300;
+}
+#overall-rating {
+  margin-left: 5px;
+  color: #ffa800;
+  font-family: "Outfit";
+  font-weight: 300;
+}
+.description {
+  text-align: justify;
+  font-family: "Outfit";
+  font-size: 11px;
+  margin: 0;
+  margin-left: 5%;
+  margin-right: 15px;
+  margin-top: -3%;
+}
+.footer {
+  background-color: #ffa800;
+  color: #fff;
+
+  text-align: center;
+  padding: 10px;
+}
+#footer-text {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
