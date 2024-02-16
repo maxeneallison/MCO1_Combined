@@ -144,6 +144,22 @@ hr {
   width: 85%;
   margin-bottom: 5%;
 }
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: #ff5300;
+}
+a:active {
+  text-decoration: none;
+  color: black;
+}
 .restos {
   border: 2px solid #ffa800; /* Added solid border */
   margin: 0;
@@ -170,7 +186,7 @@ hr {
   margin: 0;
   padding: 0;
   font-size: 23px;
-  margin-left: 10px;
+  margin-left: 5%;
   width: 200%;
   font-family: "Outfit";
   align-items: center;
