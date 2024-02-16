@@ -1,3 +1,5 @@
+
+
 .sticky {
   position: fixed;
   top: 0;
@@ -262,13 +264,75 @@ footer > h1 {
 
 .parent-div {
   width: 100%;
-  height: 1000px;
+  height: 800px;
   display: flex;
+}
+
+.banner-container {
+  width: 100%;
+  height: 660px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-container > img {
+  width: 100%;
+  height: 500px;
+  
+  filter: brightness(40%);
+
+  box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+}
+
+.catchline-container {
+  height: 350px;
+  width: 680px;
+  /*
+  box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.4);
+  */
+  border-radius: 20px;
+
+  position: absolute;
+  top: 120px;
+  box-sizing: border-box;
+  padding: 20px;
+
+}
+
+.catchline-container > h1 {
+  text-align: center;
+  color: #ffa800;
+  font-family: "Outfit";
+  font-size: 40px;
+
+}
+
+.catchline-container > p{
+  text-align: justify;
+  font-family: "Outfit";
+  color: white;
+  font-size: 20px;
+}
+
+.reviews-title-placeholder {
+  color: black;
+  font-family: "Outfit";
+  font-size: 40px;
+
+  text-align: center;
+    position: absolute;
+    top: 680px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
 }
 
 .left-section {
   width: 60%;
-  height: 1000px;
+  height: 800px;
 }
 
 .imgdiv {
@@ -277,7 +341,7 @@ footer > h1 {
   height: 620px;
 
   padding-left: 150px;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .imgdiv > img {
@@ -295,7 +359,7 @@ footer > h1 {
 
   box-sizing: border-box; /* to prevent padding from making the div bigger*/
   padding-left: 150px;
-  padding-top: 120px;
+  padding-top: 50px;
 }
 
 .establishments-button {
@@ -370,9 +434,9 @@ footer > h1 {
 
 .right-section {
   width: 40%;
-  height: 850px;
+  height: 800px;
 
-  padding-top: 120px;
+  padding-top: 20px;
 
   display: block;
 }
@@ -409,7 +473,6 @@ footer > h1 {
   margin: auto;
 
   box-sizing: border-box; /* to prevent padding from making the div bigger*/
-  padding-top: 7px;
 
   border-bottom: 3px solid black;
 }
