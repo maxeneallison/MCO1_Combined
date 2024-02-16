@@ -36,6 +36,12 @@ body {
   color: #fff;
   text-decoration: none;
 }
+.opt-titles-curr {
+  margin-right: 20px;
+  text-decoration: underline; /* Add underline when hovered */
+  text-decoration-color: #ffa800;
+  text-decoration-thickness: 5px;
+}
 .header-options :hover {
   text-decoration: underline; /* Add underline when hovered */
   text-decoration-color: #ffa800;
