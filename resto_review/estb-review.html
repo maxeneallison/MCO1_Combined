@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estb-review.css" />
+    <title>Establishment Reviews</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <header class="top-header">
+    <img src="images/LOGO-YL.png" alt="eggy-logo" id="eggy-logo" />
+    <div class="header-options">
+      <h2 class="opt-titles">Home</h2>
+      <h2 class="opt-titles">Explore</h2>
+      <h2 class="opt-titles">Search</h2>
+    </div>
+
+    <div class="top-profile" id="top-profile">
+      <img src="images/profile-pic.jpg" alt="profile-pic" id="profile-pic" />
+      <div id="options" class="options">
+        <button id="go-profile">Profile</button>
+        <button id="logout">Logout</button>
+      </div>
+    </div>
+  </header>
+      <div class="main-list">
+        <section class ="back-button-container">
+          <a href="user-profile.html" id="back-link">
+            <img src="images/arrow.png" alt="back arrow" id="back-arrow">  
+          </a>
+          <h1 id="back-button">  Back </h1> 
+          <hr />
+        </section>
+      </div>
+      <div class="establishment">
+        <div class="establishment-left">
+          <div class="establishment-top-left">
+            <div class="establishment-profile">
+              <img src="/images/chimmy.jpeg" class="chimmy-photo">
+              <div class="establishment-profile-text">
+                <div class="owner-diamond">
+                  <h3 class="establishment-name">
+                    Establishment Owner
+                  </h3>
+                  <img src="/images/diamond.png" alt="" class="diamond-photo">
+                </div>
+                <h4 class="establishment-username">
+                  @username
+                </h4>
+              </div>
+            </div>
+          </div>  
+          <div class="establishment-top-right">
+            <span class="rating-font">4</span> out of 5 <br>
+            <img src="/images/star.png" alt="" class="stars">
+            <img src="/images/star.png" alt="" class="stars">
+            <img src="/images/star.png" alt="" class="stars">
+            <img src="/images/star.png" alt="" class="stars">
+          </div>
+          <div class ="establishment-desc">
+            <h2 class="resto-name">
+              NAME OF RESTAURANT HERE
+            </h2> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          </div>
+        </div>
+        <div class="establishment-right">
+          <div class="establishment-right-content">
+            <!--image slider start-->
+            <div class="slider">
+              <div class="slides">
+                <!--radio buttons start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!--radio buttons end-->
+                <!--slide images start-->
+                <div class="slide first">
+                  <img src="/images/chimmy-1.jpg" alt="">
+                </div>
+                <div class="slide">
+                  <img src="/images/chimmy-2.jpg" alt="">
+                </div>
+                <div class="slide">
+                  <img src="/images/chimmy-3.png" alt="">
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                  <div class="auto-btn1"></div>
+                  <div class="auto-btn2"></div>
+                  <div class="auto-btn3"></div>
+                </div>
+                <!--automatic navigation end-->
+              </div>
+              <!--manual navigation start-->
+              <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+              </div>
+              <!--manual navigation end-->
+            </div>
+            <!--image slider end-->
+            <!-- Automatic Script Slider>
+            <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+              document.getElementById('radio' + counter).checked = true;
+              counter++;
+              if(counter > 4){
+                counter = 1;
+              }
+            }, 5000);
+            </script>
+            <!-->
+          </div>
+        </div>
+      </div>
+
+        <button class ="post-popup"> Post</button>
+          <dialog class="post-popup-container">
+
+            <div class="post-popup-box">
+
+              <button class ="post-popup-close-button">  X </button> 
+
+              <div class="post-popup-first-row">
+                <div class="post-popup-profile">
+                  <img src="/images/profile-pic.jpg" alt="" class="post-popup-profile-photo">
+                </div>
+                <div class="post-popup-rating">
+                  <div class="rating-random">
+                    <div class="rating-1">
+                      <div class="rating-food">
+                        <div class="food-text">
+                          Food
+                        </div>
+                        
+                        <div class="stars-rating">
+                          <img src="/images/star.png" alt="" class="stars-1">
+                          <img src="/images/star.png" alt="" class="stars-1">
+                          <img src="/images/star.png" alt="" class="stars-1">
+                          <img src="/images/star.png" alt="" class="stars-1">
+                        </div>
+                      </div>
+                      <div class="rating-ambiance">
+                        Ambiance
+                        <div class="stars-rating">
+                          <img src="/images/star.png" alt="" class="stars-1">
+                          <img src="/images/star.png" alt="" class="stars-1">
+                          <img src="/images/star.png" alt="" class="stars-1">
+                          <img src="/images/star.png" alt="" class="stars-1">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rating-random-2">
+                    <div class="rating-2">
+                      <div class="rating-service">
+                        Service
+                        <div class="stars-rating">
+                          <img src="/images/star.png" alt="" class="stars-1">
+                          <img src="/images/star.png" alt="" class="stars-1">
+                          <img src="/images/star.png" alt="" class="stars-1">
+                          <img src="/images/star.png" alt="" class="stars-1">
+                        </div>
+                      </div>
+                      <div class="rating-overall">
+                        <div class="overall-text">
+                          Overall
+                        </div>
+                        <div class="stars-rating">
+                          <img src="/images/star.png" alt="" class="stars-1">
+                          <img src="/images/star.png" alt="" class="stars-1">
+                          <img src="/images/star.png" alt="" class="stars-1">
+                          <img src="/images/star.png" alt="" class="stars-1">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="post-popup-middle">
+                <div class="post-popup-title">
+                  Title
+                </div>
+                <div class="post-popup-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru
+                </div>
+                
+              </div>
+
+              <div class="post-popup-bottom-container">
+                <div class="post-popup-bottom">
+                  <div class="imageleft">
+                    <img src="/images/add-pic.png" alt="" class="addphoto">
+                  </div>
+                  <div class="save-post">
+                    <button class ="save-post-popup"> Post</button>
+                  </div>
+                </div>
+              </div>
+      
+
+            </div>
+
+        </dialog> 
+      </div>
+      <div class="review-line">
+        <h2 class="reviews">
+          REVIEWS
+        </h2> 
+        <div class="whole-search">
+          
+        <div class="search">
+
+          <form class="search-form">
+            <input type="text" placeholder="Search..." class="search-input">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-whole">
+          <div class="review-left">
+            <div class="review-left-top">
+              <div class="review-left-top-profile">
+                <div class="review-left-top-profile-photo">
+                  <img src="/images/dogprofile.jpg" alt="" class="review-profile-photo">
+                  </div>
+                <div class="review-left-top-profile-text">
+                  <div class="review-profile-name">
+                    Another Name
+                  </div>
+                  <div class="review-username">
+                    @username
+                  </div>
+                </div>  
+
+                <div class="settings">
+
+                  <div class="dropdown">
+                    <button class="settings-button"> <img src="https://i.stack.imgur.com/twIm6.png" class="settings-photo"></button>
+                    <div class="content">
+                        <button class = "edit-button">Edit</button>
+
+                        <dialog class="edit-popup-container">
+                          <div class="edit-popup-box">
+                            <div class="edit-toprow">
+                              <div class="edit-close-button-container">
+                                <button class ="edit-popup-close-button">  X </button> 
+                              </div>
+                              <div class="edit-popup-header">
+                                Edit Post
+                              </div>
+                              <div class="edit-save-popup-button">
+                                <button class = "edit-save-button">Save</button>
+                              </div>
+                            </div>
+                            
+              
+                            <div class="edit-popup-first-row">
+                              <div class="edit-popup-profile">
+                                <img src="/images/profile-pic.jpg" alt="" class="post-popup-profile-photo">
+                              </div>
+                              <div class="edit-popup-rating">
+                                <div class="rating-random">
+                                  <div class="rating-1">
+                                    <div class="rating-food">
+                                      <div class="food-text">
+                                        Food
+                                      </div>
+                                      
+                                      <div class="stars-rating">
+                                        <img src="/images/star.png" alt="" class="stars-1">
+                                        <img src="/images/star.png" alt="" class="stars-1">
+                                        <img src="/images/star.png" alt="" class="stars-1">
+                                        <img src="/images/star.png" alt="" class="stars-1">
+                                      </div>
+                                    </div>
+                                    <div class="rating-ambiance">
+                                      Ambiance
+                                      <div class="stars-rating">
+                                        <img src="/images/star.png" alt="" class="stars-1">
+                                        <img src="/images/star.png" alt="" class="stars-1">
+                                        <img src="/images/star.png" alt="" class="stars-1">
+                                        <img src="/images/star.png" alt="" class="stars-1">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="rating-random-2">
+                                  <div class="rating-2">
+                                    <div class="rating-service">
+                                      Service
+                                      <div class="stars-rating">
+                                        <img src="/images/star.png" alt="" class="stars-1">
+                                        <img src="/images/star.png" alt="" class="stars-1">
+                                        <img src="/images/star.png" alt="" class="stars-1">
+                                        <img src="/images/star.png" alt="" class="stars-1">
+                                      </div>
+                                    </div>
+                                    <div class="rating-overall">
+                                      <div class="overall-text">
+                                        Overall
+                                      </div>
+                                      <div class="stars-rating">
+                                        <img src="/images/star.png" alt="" class="stars-1">
+                                        <img src="/images/star.png" alt="" class="stars-1">
+                                        <img src="/images/star.png" alt="" class="stars-1">
+                                        <img src="/images/star.png" alt="" class="stars-1">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="edit-popup-middle">
+                              <div class="edit-popup-title">
+                                Title
+                              </div>
+                              <div class="edit-popup-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru
+                              </div>
+                              <div class="edit-popup-photos">
+                                <img src="/images/chimmy-review.jpg" alt="" class="edit-photo">
+                                <img src="/images/chimmy-review-2.jpg" alt="" class="edit-photo">
+                              </div>
+                            </div>
+      
+                    
+              
+                          </div>
+              
+                      </dialog> 
+
+
+                        <button class = "del-button">Delete</button>
+
+                        <dialog class = "delete-popup-container">
+                          <div class="delete-whole">
+                            <div class="delete-header">
+                              DELETE POST?
+                            </div>
+                            <div class="delete-middle">
+                              This can't be undone and it will be removed from your profile, the timeline of any accounts that follow you, and from search results.
+                            </div>
+                            <div class="delete-bottom">
+                              <button class = "confirm-del-button">Delete</button>
+                              <button class = "cancel-del-button"> Cancel </button>
+                            </div>
+                          </div>
+                          
+
+                        </dialog>
+                    </div>
+                </div>
+                  
+                  <br>
+                  Febuary 07, 2024
+
+
+                </div>
+              </div>
+              <div class="review-title">
+                Title
+              </div>
+              <div class="review-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis auctor enim a efficitur. Suspendisse eu maximus purus. Nulla a malesuada magna. Curabitur ligula tortor, consectetur non neque eu, convallis tincidunt odio. Ut at erat fringilla, semper orci eget, convallis tortor. Sed a fringilla erat. Ut vitae malesuada neque. Mauris luctus, massa nec facilisis vulputate, justo nunc vestibulum lacus, ac malesuada lectus justo id eros. Curabitur vel augue laoreet, varius libero at, sollicitudin ligula. Sed rutrum tellus ligula, sed ultrices mi finibus eu. Suspendisse quis sapien sodales, luctus mi id, vulputate dui.
+
+              </div>
+            <div class="rating-random">
+              <div class="rating-1">
+                <div class="rating-food">
+                  <div class="food-text">
+                    Food
+                  </div>
+                  
+                  <div class="stars-rating">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                  </div>
+                </div>
+                <div class="rating-ambiance">
+                  Ambiance
+                  <div class="stars-rating">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rating-random-2">
+              <div class="rating-2">
+                <div class="rating-service">
+                  Service
+                  <div class="stars-rating">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                  </div>
+                </div>
+                <div class="rating-overall">
+                  <div class="overall-text">
+                    Overall
+                  </div>
+                  <div class="stars-rating">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="review-right">
+            <div class="review-pic">
+              <img src="/images/chimmy-4.jpg" alt="" class="review-photo">
+            </div>
+            <div class="vote">
+
+              <div class="post-ratings-container">
+                <div class="post-rating">
+                 <span class="helpful">Helpful? </span>  
+                  <span class="post-rating-button material-icons">thumb_up</span>
+                  <span class="post-rating-count">0</span>
+                </div>
+                <div class="post-rating">
+                  <span class="post-rating-button material-icons">thumb_down</span>
+                  <span class="post-rating-count">0</span>
+                </div>
+              </div>
+
+
+
+              
+            </div>
+          </div>
+        </div>
+        <div class="owner-comment">
+          <div class="owner-review">
+            <div class="establishment-profile">
+              <img src="/images/chimmy.jpeg" class="chimmy-photo">
+              <div class="establishment-profile-text">
+                <div class="owner-diamond">
+                  <h3 class="establishment-name">
+                    Establishment Owner
+                  </h3>
+                  <img src="/images/diamond.png" alt="" class="diamond-photo">
+                </div>
+                <h4 class="establishment-username">
+                  @username
+                </h4>
+              </div>
+              <div class="owner-settings">
+                <div class="dropdown-1">
+                  <button class="settings-button"> 
+                    <span class="material-symbols-outlined">
+                    more_horiz
+                    </span>
+                  </button>
+                  <div class="content">
+                      <button class = "edit-button-2">Edit</button>
+
+                      <dialog class="edit-popup-container-2">
+                        <div class="edit-popup-box">
+                          <div class="edit-toprow">
+                            <div class="edit-close-button-container">
+                              <button class ="edit-popup-close-button-2">  X </button> 
+                            </div>
+                            <div class="edit-popup-header">
+                              Edit Post
+                            </div>
+                            <div class="edit-save-popup-button-2">
+                              <button class = "edit-save-button-2">Save</button>
+                            </div>
+                          </div>
+                          
+            
+                          <div class="edit-popup-first-row">
+                            <div class="edit-popup-profile">
+                              <img src="/images/profile-pic.jpg" alt="" class="post-popup-profile-photo">
+                            </div>
+                            <div class="edit-popup-rating">
+                              <div class="rating-random">
+                                <div class="rating-1">
+                                  <div class="rating-food">
+                                    <div class="food-text">
+                                      Food
+                                    </div>
+                                    
+                                    <div class="stars-rating">
+                                      <img src="/images/star.png" alt="" class="stars-1">
+                                      <img src="/images/star.png" alt="" class="stars-1">
+                                      <img src="/images/star.png" alt="" class="stars-1">
+                                      <img src="/images/star.png" alt="" class="stars-1">
+                                    </div>
+                                  </div>
+                                  <div class="rating-ambiance">
+                                    Ambiance
+                                    <div class="stars-rating">
+                                      <img src="/images/star.png" alt="" class="stars-1">
+                                      <img src="/images/star.png" alt="" class="stars-1">
+                                      <img src="/images/star.png" alt="" class="stars-1">
+                                      <img src="/images/star.png" alt="" class="stars-1">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="rating-random-2">
+                                <div class="rating-2">
+                                  <div class="rating-service">
+                                    Service
+                                    <div class="stars-rating">
+                                      <img src="/images/star.png" alt="" class="stars-1">
+                                      <img src="/images/star.png" alt="" class="stars-1">
+                                      <img src="/images/star.png" alt="" class="stars-1">
+                                      <img src="/images/star.png" alt="" class="stars-1">
+                                    </div>
+                                  </div>
+                                  <div class="rating-overall">
+                                    <div class="overall-text">
+                                      Overall
+                                    </div>
+                                    <div class="stars-rating">
+                                      <img src="/images/star.png" alt="" class="stars-1">
+                                      <img src="/images/star.png" alt="" class="stars-1">
+                                      <img src="/images/star.png" alt="" class="stars-1">
+                                      <img src="/images/star.png" alt="" class="stars-1">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="edit-popup-middle">
+                            <div class="edit-popup-title">
+                              Title
+                            </div>
+                            <div class="edit-popup-desc">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru
+                            </div>
+                            <div class="edit-popup-photos">
+                              <img src="/images/chimmy-review.jpg" alt="" class="edit-photo">
+                              <img src="/images/chimmy-review-2.jpg" alt="" class="edit-photo">
+                            </div>
+                          </div>
+    
+                  
+            
+                        </div>
+            
+                    </dialog> 
+
+
+                      <button class = "del-button-2">Delete</button>
+
+                      <dialog class = "delete-popup-container-2">
+                        <div class="delete-whole">
+                          <div class="delete-header">
+                            DELETE POST?
+                          </div>
+                          <div class="delete-middle">
+                            This can't be undone and it will be removed from your profile, the timeline of any accounts that follow you, and from search results.
+                          </div>
+                          <div class="delete-bottom">
+                            <button class = "confirm-del-button-2">Delete</button>
+                            <button class = "cancel-del-button-2"> Cancel </button>
+                          </div>
+                        </div>
+                        
+
+                      </dialog>
+                  </div>
+              </div>
+              <h3 class="date-owner">
+                February 8, 2024
+              </h3>
+              </div>
+            </div>
+            <div class="owner-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis auctor enim a efficitur. Suspendisse eu maximus purus. Nulla a malesuada magna. Curabitur ligula tortor, consectetur non neque eu, convallis tincidunt odio. Ut at erat fringilla, semper orci eget, convallis tortor. Sed a fringilla erat. Ut vitae malesuada neque. Mauris luctus, massa nec facilisis vulputate, justo nunc vestibulum lacus, ac malesuada lectus justo
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!--2ND REVIEW--------------------------------------------------------------------->
+      <div class="review">
+        <div class="review-whole">
+          <div class="review-left">
+            <div class="review-left-top">
+              <div class="review-left-top-profile">
+                <div class="review-left-top-profile-photo">
+                  <img src="/images/dogprofile.jpg" alt="" class="review-profile-photo">
+                  </div>
+                <div class="review-left-top-profile-text">
+                  <div class="review-profile-name">
+                    Another Name
+                  </div>
+                  <div class="review-username">
+                    @username
+                  </div>
+                </div>  
+
+                <div class="settings">
+
+                  <div class="dropdown">
+                    <button class="settings-button"> <img src="https://i.stack.imgur.com/twIm6.png" class="settings-photo"></button>
+                    <div class="content">
+                        <button class = "edit-button">Edit</button>
+
+
+
+                        <button class = "del-button">Delete</button>
+
+
+
+                        </dialog>
+                    </div>
+                </div>
+                  
+                  <br>
+                  Febuary 07, 2024
+
+
+                </div>
+              </div>
+              <div class="review-title">
+                Title
+              </div>
+              <div class="review-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis auctor enim a efficitur. Suspendisse eu maximus purus. Nulla a malesuada magna. Curabitur ligula tortor, consectetur non neque eu, convallis tincidunt odio. Ut at erat fringilla, semper orci eget, convallis tortor. Sed a fringilla erat. Ut vitae malesuada neque. Mauris luctus, massa nec facilisis vulputate, justo nunc vestibulum lacus, ac malesuada lectus justo id eros. Curabitur vel augue laoreet, varius libero at, sollicitudin ligula. Sed rutrum tellus ligula, sed ultrices mi finibus eu. Suspendisse quis sapien sodales, luctus mi id, vulputate dui.
+
+              </div>
+            <div class="rating-random">
+              <div class="rating-1">
+                <div class="rating-food">
+                  <div class="food-text">
+                    Food
+                  </div>
+                  
+                  <div class="stars-rating">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                  </div>
+                </div>
+                <div class="rating-ambiance">
+                  Ambiance
+                  <div class="stars-rating">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rating-random-2">
+              <div class="rating-2">
+                <div class="rating-service">
+                  Service
+                  <div class="stars-rating">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                  </div>
+                </div>
+                <div class="rating-overall">
+                  <div class="overall-text">
+                    Overall
+                  </div>
+                  <div class="stars-rating">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                  </div>
+                </div>
+              </div>
+              <div class="owner-reply-whole">
+                <div class="owner-reply">
+                  <button class ="owner-reply-button">Owner Reply</button>
+                  <dialog class="owner-reply-container">
+        
+                      <button class ="owner-popup-close-button">  X </button> 
+        
+                      <div class="post-popup-first-row">
+                        <div class="post-popup-profile">
+                          <img src="/images/profile-pic.jpg" alt="" class="post-popup-profile-photo">
+                        </div>
+                        <div class="owner-popup-profile">
+                          <div class="establishment-profile-text">
+                            <div class="owner-diamond">
+                              <h3 class="establishment-name">
+                                Establishment Owner
+                              </h3>
+                              <img src="/images/diamond.png" alt="" class="diamond-photo">
+                            </div>
+                            <h4 class="establishment-username">
+                              @username
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owner-popup-middle">
+                        <div class="post-popup-desc">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru
+                        </div>
+                        
+                      </div>
+        
+                      <div class="post-popup-bottom-container">
+                        <div class="post-popup-bottom">
+                          <div class="imageleft">
+
+                          </div>
+                          <div class="save-post">
+                            <button class ="owner-save-post-popup"> Post</button>
+                          </div>
+                        </div>
+                      </div>
+              
+        
+                  </dialog>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+          <div class="review-right">
+            <div class="review-pic">
+              <img src="/images/chimmy-4.jpg" alt="" class="review-photo">
+            </div>
+            <div class="vote">
+
+              <div class="post-ratings-container">
+                <div class="post-rating">
+                 <span class="helpful">Helpful? </span>  
+                  <span class="post-rating-button material-icons">thumb_up</span>
+                  <span class="post-rating-count">0</span>
+                </div>
+                <div class="post-rating">
+                  <span class="post-rating-button material-icons">thumb_down</span>
+                  <span class="post-rating-count">0</span>
+                </div>
+              </div>
+
+
+
+              
+            </div>
+          </div>
+        </div>
+       
+        </div>
+      <!--3ND REVIEW--------------------------------------------------------------------->
+      <div class="review">
+        <div class="review-whole">
+          <div class="review-left">
+            <div class="review-left-top">
+              <div class="review-left-top-profile">
+                <div class="review-left-top-profile-photo">
+                  <img src="/images/dogprofile.jpg" alt="" class="review-profile-photo">
+                  </div>
+                <div class="review-left-top-profile-text">
+                  <div class="review-profile-name">
+                    Another Name
+                  </div>
+                  <div class="review-username">
+                    @username
+                  </div>
+                </div>  
+
+                <div class="settings">
+
+                  <div class="dropdown">
+                    <button class="settings-button"> <img src="https://i.stack.imgur.com/twIm6.png" class="settings-photo"></button>
+                    <div class="content">
+                        <button class = "edit-button">Edit</button>
+
+
+
+                        <button class = "del-button">Delete</button>
+
+
+
+                        </dialog>
+                    </div>
+                </div>
+                  
+                  <br>
+                  Febuary 07, 2024
+
+
+                </div>
+              </div>
+              <div class="review-title">
+                Title
+              </div>
+              <div class="review-desc">
+                <p class="original">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis auctor enim a efficitur. Suspendisse eu maximus purus. Nulla a malesuada magna. Curabitur ligula tortor, consectetur non neque eu, 
+                </p>
+                <span class="dots">...</span>
+                <p class="extra">
+                  convallis tincidunt odio. Ut at erat fringilla, semper orci eget, convallis tortor. Sed a fringilla erat. Ut vitae malesuada neque. Mauris luctus, massa nec facilisis vulputate, justo nunc vestibulum lacus, ac malesuada lectus justo id eros. Curabitur vel augue laoreet, varius libero at, sollicitudin ligula. Sed rutrum tellus ligula, sed ultrices mi finibus eu. Suspendisse quis sapien sodales, luctus mi id, vulputate dui.
+                </p>
+                <input type="checkbox" id="btn"/>
+                <label for = "btn"></label>
+              </div>
+            <div class="rating-random">
+              <div class="rating-1">
+                <div class="rating-food">
+                  <div class="food-text">
+                    Food
+                  </div>
+                  
+                  <div class="stars-rating">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                  </div>
+                </div>
+                <div class="rating-ambiance">
+                  Ambiance
+                  <div class="stars-rating">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rating-random-2">
+              <div class="rating-2">
+                <div class="rating-service">
+                  Service
+                  <div class="stars-rating">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                  </div>
+                </div>
+                <div class="rating-overall">
+                  <div class="overall-text">
+                    Overall
+                  </div>
+                  <div class="stars-rating">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="review-right">
+            <div class="review-pic">
+              <img src="/images/chimmy-4.jpg" alt="" class="review-photo">
+            </div>
+            <div class="vote">
+
+              <div class="post-ratings-container">
+                <div class="post-rating">
+                 <span class="helpful">Helpful? </span>  
+                  <span class="post-rating-button material-icons">thumb_up</span>
+                  <span class="post-rating-count">0</span>
+                </div>
+                <div class="post-rating">
+                  <span class="post-rating-button material-icons">thumb_down</span>
+                  <span class="post-rating-count">0</span>
+                </div>
+              </div>
+
+
+
+              
+            </div>
+          </div>
+        </div>
+       
+        </div>
+          <!--4th REVIEW--------------------------------------------------------------------->
+      <div class="review">
+        <div class="review-whole">
+          <div class="review-left">
+            <div class="review-left-top">
+              <div class="review-left-top-profile">
+                <div class="review-left-top-profile-photo">
+                  <img src="/images/dogprofile.jpg" alt="" class="review-profile-photo">
+                  </div>
+                <div class="review-left-top-profile-text">
+                  <div class="review-profile-name">
+                    Another Name
+                  </div>
+                  <div class="review-username">
+                    @username
+                  </div>
+                </div>  
+
+                <div class="settings">
+
+                  <div class="dropdown">
+                    <button class="settings-button"> <img src="https://i.stack.imgur.com/twIm6.png" class="settings-photo"></button>
+                    <div class="content">
+                        <button class = "edit-button">Edit</button>
+
+
+
+                        <button class = "del-button">Delete</button>
+
+
+
+                        </dialog>
+                    </div>
+                </div>
+                  
+                  <br>
+                  Febuary 07, 2024
+
+
+                </div>
+              </div>
+              <div class="review-title">
+                Title
+              </div>
+              <div class="review-desc">
+                <p class="original">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis auctor enim a efficitur. Suspendisse eu maximus purus. Nulla a malesuada magna. Curabitur ligula tortor, consectetur non neque eu, 
+                </p>
+                <span class="dots">...</span>
+                <p class="extra">
+                  convallis tincidunt odio. Ut at erat fringilla, semper orci eget, convallis tortor. Sed a fringilla erat. Ut vitae malesuada neque. Mauris luctus, massa nec facilisis vulputate, justo nunc vestibulum lacus, ac malesuada lectus justo id eros. Curabitur vel augue laoreet, varius libero at, sollicitudin ligula. Sed rutrum tellus ligula, sed ultrices mi finibus eu. Suspendisse quis sapien sodales, luctus mi id, vulputate dui.
+                </p>
+                <input type="checkbox" id="btn"/>
+                <label for = "btn"></label>
+              </div>
+            <div class="rating-random">
+              <div class="rating-1">
+                <div class="rating-food">
+                  <div class="food-text">
+                    Food
+                  </div>
+                  
+                  <div class="stars-rating">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                  </div>
+                </div>
+                <div class="rating-ambiance">
+                  Ambiance
+                  <div class="stars-rating">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rating-random-2">
+              <div class="rating-2">
+                <div class="rating-service">
+                  Service
+                  <div class="stars-rating">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                  </div>
+                </div>
+                <div class="rating-overall">
+                  <div class="overall-text">
+                    Overall
+                  </div>
+                  <div class="stars-rating">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                    <img src="/images/star.png" alt="" class="stars-1">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="review-right">
+            <div class="review-pic">
+              <img src="/images/chimmy-4.jpg" alt="" class="review-photo">
+            </div>
+            <div class="vote">
+
+              <div class="post-ratings-container">
+                <div class="post-rating">
+                 <span class="helpful">Helpful? </span>  
+                  <span class="post-rating-button material-icons">thumb_up</span>
+                  <span class="post-rating-count">0</span>
+                </div>
+                <div class="post-rating">
+                  <span class="post-rating-button material-icons">thumb_down</span>
+                  <span class="post-rating-count">0</span>
+                </div>
+              </div>
+
+
+
+              
+            </div>
+          </div>
+        </div>
+       
+        </div>
+          <!--5th REVIEW--------------------------------------------------------------------->
+          <div class="review">
+            <div class="review-whole">
+              <div class="review-left">
+                <div class="review-left-top">
+                  <div class="review-left-top-profile">
+                    <div class="review-left-top-profile-photo">
+                      <img src="/images/dogprofile.jpg" alt="" class="review-profile-photo">
+                      </div>
+                    <div class="review-left-top-profile-text">
+                      <div class="review-profile-name">
+                        Another Name
+                      </div>
+                      <div class="review-username">
+                        @username
+                      </div>
+                    </div>  
+    
+                    <div class="settings">
+    
+                      <div class="dropdown">
+                        <button class="settings-button"> <img src="https://i.stack.imgur.com/twIm6.png" class="settings-photo"></button>
+                        <div class="content">
+                            <button class = "edit-button">Edit</button>
+    
+    
+    
+                            <button class = "del-button">Delete</button>
+    
+    
+    
+                            </dialog>
+                        </div>
+                    </div>
+                      
+                      <br>
+                      Febuary 07, 2024
+    
+    
+                    </div>
+                  </div>
+                  <div class="review-title">
+                    Title
+                  </div>
+                  <div class="review-desc">
+                    <p class="original">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis auctor enim a efficitur. Suspendisse eu maximus purus. Nulla a malesuada magna. Curabitur ligula tortor, consectetur non neque eu, 
+                    </p>
+                    <span class="dots">...</span>
+                    <p class="extra">
+                      convallis tincidunt odio. Ut at erat fringilla, semper orci eget, convallis tortor. Sed a fringilla erat. Ut vitae malesuada neque. Mauris luctus, massa nec facilisis vulputate, justo nunc vestibulum lacus, ac malesuada lectus justo id eros. Curabitur vel augue laoreet, varius libero at, sollicitudin ligula. Sed rutrum tellus ligula, sed ultrices mi finibus eu. Suspendisse quis sapien sodales, luctus mi id, vulputate dui.
+                    </p>
+                    <input type="checkbox" id="btn"/>
+                    <label for = "btn"></label>
+                  </div>
+                <div class="rating-random">
+                  <div class="rating-1">
+                    <div class="rating-food">
+                      <div class="food-text">
+                        Food
+                      </div>
+                      
+                      <div class="stars-rating">
+                        <img src="/images/star.png" alt="" class="stars-1">
+                        <img src="/images/star.png" alt="" class="stars-1">
+                        <img src="/images/star.png" alt="" class="stars-1">
+                        <img src="/images/star.png" alt="" class="stars-1">
+                      </div>
+                    </div>
+                    <div class="rating-ambiance">
+                      Ambiance
+                      <div class="stars-rating">
+                        <img src="/images/star.png" alt="" class="stars-1">
+                        <img src="/images/star.png" alt="" class="stars-1">
+                        <img src="/images/star.png" alt="" class="stars-1">
+                        <img src="/images/star.png" alt="" class="stars-1">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rating-random-2">
+                  <div class="rating-2">
+                    <div class="rating-service">
+                      Service
+                      <div class="stars-rating">
+                        <img src="/images/star.png" alt="" class="stars-1">
+                        <img src="/images/star.png" alt="" class="stars-1">
+                        <img src="/images/star.png" alt="" class="stars-1">
+                        <img src="/images/star.png" alt="" class="stars-1">
+                      </div>
+                    </div>
+                    <div class="rating-overall">
+                      <div class="overall-text">
+                        Overall
+                      </div>
+                      <div class="stars-rating">
+                        <img src="/images/star.png" alt="" class="stars-1">
+                        <img src="/images/star.png" alt="" class="stars-1">
+                        <img src="/images/star.png" alt="" class="stars-1">
+                        <img src="/images/star.png" alt="" class="stars-1">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="review-right">
+                <div class="review-pic">
+                  <img src="/images/chimmy-4.jpg" alt="" class="review-photo">
+                </div>
+                <div class="vote">
+    
+                  <div class="post-ratings-container">
+                    <div class="post-rating">
+                     <span class="helpful">Helpful? </span>  
+                      <span class="post-rating-button material-icons">thumb_up</span>
+                      <span class="post-rating-count">0</span>
+                    </div>
+                    <div class="post-rating">
+                      <span class="post-rating-button material-icons">thumb_down</span>
+                      <span class="post-rating-count">0</span>
+                    </div>
+                  </div>
+    
+    
+    
+                  
+                </div>
+              </div>
+            </div>
+           
+            </div>
+      <script src="estb-review.js"></script>
+</body>
+</html>

@@ -30,6 +30,7 @@ body {
 }
 .opt-titles {
   margin-right: 20px;
+  color: black;
 }
 .header-options a {
   z-index: 2;
