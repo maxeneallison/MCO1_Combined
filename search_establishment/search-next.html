@@ -18,7 +18,7 @@
       <div class="header-options">
         <h2 class="opt-titles">Home</h2>
         <h2 class="opt-titles">Explore</h2>
-        <h2 class="opt-titles">Search</h2>
+        <h2 class="opt-titles-curr">Search</h2>
       </div>
 
       <div class="top-profile" id="top-profile">
@@ -32,37 +32,42 @@
     <div class="main-list">
       <div class="top-display">
         <h1 id="establishment-title">Search Establishment</h1>
-        <form id="search-form" action="search-next.html"> <!-- Add action to the form -->
+        <form id="search-form" action="search-next.html">
+          <!-- Add action to the form -->
           <input type="text" id="search-bar" placeholder="Chimmy" />
-          <button type="submit" id="search-button">Search</button> <!-- Move button outside of anchor tag -->
+          <button type="submit" id="search-button">Search</button>
+          <!-- Move button outside of anchor tag -->
         </form>
       </div>
+      0
     </div>
-      <hr />
+    <hr />
+    <div class="main-searched-container">
       <div class="main-searched">
-        <img src="images/chimmy.jpeg" alt="chimmy" id="resto-pic">
+        <img src="images/chimmy.jpeg" alt="chimmy" id="resto-pic" />
         <div class="title-bar-box">
-            <h2 id="resto-name">24 Chicken</h2>
-            <section class="ratings">
-                <h1 id="main-rating">4.0</h1>
-                <h2 id="out-of">out of</h2>
-                <h1 id="overall-rating">5</h1>                
-            </section>
-            <img src="images/star.png" alt="star" id="rate" /> 
+          <div class="top-part">
+            <div class="top-left">Chimmy</div>
+            <div class="top-right">4.6 out of 5</div>
+            <img src="images/star.png" alt="" class="star" />
+          </div>
+          <div class="bottom-part-container">
+            <div class="bottom-part">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              quis lacus ut ante facilisis posuere sit amet a leo. Nam augue
+              ante, lobortis et nisl sed, facilisis porttitor orci. Pellentesque
+              in mollis sapien, a tristique velit. Etiam faucibus ipsum eu mi
+              tincidunt mattis. Vestibulum aliquam nisi sollicitudin lacus
+              consequat, quis scelerisque nisi commodo.
+            </div>
+          </div>
         </div>
-        <section>
-            <p class="description">
-                Serving happiness at a budget-friendly price since 2017. Selling
-                delicious Korean Fried Chicken is not our only goal. Being part of
-                our customers’ lives and communities is what we aim for.
-            </p>
-        </section>                   
       </div>
-      <footer class="footer">
-        <p id="footer-text">
-          &copy; Amores, De Guzman, Tolentino and Villagarcia
-        </p>
-      </footer>
     </div>
+    <footer class="footer">
+      <p id="footer-text">
+        &copy; Amores, De Guzman, Tolentino and Villagarcia
+      </p>
+    </footer>
   </body>
 </html>

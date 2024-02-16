@@ -31,6 +31,13 @@ body {
 .opt-titles {
   margin-right: 20px;
 }
+
+.opt-titles-curr {
+  margin-right: 20px;
+  text-decoration: underline; /* Add underline when hovered */
+  text-decoration-color: #ffa800;
+  text-decoration-thickness: 5px;
+}
 .header-options a {
   z-index: 2;
   color: #fff;
@@ -167,8 +174,7 @@ hr {
   margin: 0;
   padding: 0;
 }
-.main-searched {
-  display: flex;
+.main-searched-container {
   border: 2px solid #ffa800; /* Added solid border */
   margin: 0;
   padding: 1%;
@@ -180,7 +186,9 @@ hr {
   cursor: pointer;
   transition: transform 0.2s; /* Add transition for smooth effect */
 }
-
+.main-searched {
+  display: flex;
+}
 #resto-pic {
   width: 20%;
   border-radius: 20px;
@@ -199,7 +207,6 @@ hr {
   align-content: center;
 }
 .title-bar-box {
-  display: flex;
   margin: 0;
   padding: 0;
   margin-top: -2%;
@@ -228,4 +235,42 @@ hr {
 #footer-text {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.top-part {
+  display: flex;
+}
+
+.star {
+  width: 44px;
+  height: 44px;
+  margin-top: 2%;
+}
+
+.top-part,
+.bottom-part {
+  font-family: "Outfit";
+}
+
+.top-left {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 50%;
+}
+
+.top-right {
+  font-size: 38px;
+  color: #ffa800;
+  margin-top: 2%;
+  margin-right: 1.5%;
+}
+
+.bottom-part-container {
+  margin-left: 2%;
+}
+
+.bottom-part {
+  font-weight: light;
 }
